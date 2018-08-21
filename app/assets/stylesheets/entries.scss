@@ -1,0 +1,68 @@
+// Place all the styles related to the entries controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  width: 600px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+.errors {
+  background: #FFC0C0;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.notice {
+  background: #ffcc00;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+th {
+  background: #eeeeee;
+  width: 200px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.links {
+  ul {
+    margin-top: 20px;
+    text-align: center;
+    li {
+      display: inline-block;
+      margin: 0 5px;
+    }
+  }
+
+}
+
+.actions {
+  margin-top: 20px;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+}

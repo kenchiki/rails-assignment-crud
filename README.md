@@ -1,24 +1,10 @@
-# README
+# Scaffoldで生成されたコードを何も見ずに書けるようになる
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 実行手順
+- `bundle exec rake db:create`
+- `bundle exec rake db:migrate`
+- `bundle exec rails s`
+- [http://0.0.0.0:3000/entries](http://0.0.0.0:3000/entries)にアクセス
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Ruby version
+2.5.1

@@ -1,0 +1,13 @@
+%h1 Entries#show
+= render partial: 'flash', locals: {flash: flash}
+%table
+  %tr
+    %th Title
+    %td= @entry.title
+  %tr
+    %th Body
+    %td= @entry.body
+%nav.links
+  %ul
+    %li= link_to 'Edit', edit_entry_path(@entry)
+    %li= link_to 'Index', entries_path

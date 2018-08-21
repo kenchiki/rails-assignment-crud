@@ -1,0 +1,23 @@
+= render partial: 'flash', locals: {flash: flash}
+
+- if entry.errors.any?
+  .errors
+    %p
+      %strong= "#{entry.errors.count} input errors"
+    - entry.errors.full_messages.each do |error_message|
+      %ul
+        %li= error_message
+
+= form_for(entry) do |entry_form|
+  %table
+    %tr
+      %th Title
+      %td= entry_form.text_field :title
+    %tr
+      %th Body
+      %td= entry_form.text_area :body
+
+  %nav.actions
+    %ul
+      %li= entry_form.submit 'Save'
+      %li= link_to 'Index', entries_path
